@@ -8,6 +8,8 @@ Wallpaper Engine but online-version. View animated wallpapers directly in your b
 
 **Solution with**: HTML5, CSS3, JavaScript (ES6), PHP7+
 
+**Check this project here**: (projectpreview.ufh.in)[http://projectpreview.ultimatefreehost.in/w/1]
+
 ## Table of contents
 - [Preview](#preview)
   - [Video](#video)
@@ -59,7 +61,7 @@ project-preview/
 
 ## Usage
 
-* Open website on Glitch - `in-work`;
+* Open website - (projectpreview.ufh.in)[http://projectpreview.ultimatefreehost.in/w/1];
 * Import all files on your local or public server with PHP-support:
   * Launch PHP-server;
   * Open `{{url}}/` or `{{url}}/index.php` in your browser for start page;
