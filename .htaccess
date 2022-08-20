@@ -6,15 +6,11 @@ Header set Cache-Control "max-age=0, must-revalidate"
 
 RewriteBase /
 
-RewriteCond %{HTTP:X-Forwarded-Proto} !https
-RewriteCond %{HTTPS} off
-RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
-
 RewriteRule ^w/(.*)?$ /?id=$1  [L,R=301,NE]
 RewriteCond %{HTTP_HOST} (.*)
 RewriteCond %{REQUEST_URI} /$ [NC]
 RewriteRule ^(.*)(/)$ $1 [L,R=301]
 
-RewriteCond %{HTTP_REFERER} https://preview.kenclaron.ru
+RewriteCond %{HTTP_REFERER} /
 RewriteCond %{REQUEST_URI} ^/w$
 RewriteRule . - [F]
