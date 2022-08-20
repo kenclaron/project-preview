@@ -26,6 +26,7 @@ Wallpaper Engine but online-version. View animated wallpapers directly in your b
 ## Preview
 
 ### Video
+[<img src="https://i.imgur.com/QRov5aF.gif"](https://i.imgur.com/QRov5aF.gif)
 
 ### Images
 [<img src="https://i.imgur.com/LNfkUP5.jpg" width="45%"/>](https://i.imgur.com/LNfkUP5.jpg)
@@ -36,10 +37,13 @@ Wallpaper Engine but online-version. View animated wallpapers directly in your b
 ## Features
 
 - Supports HTML, JS, CSS code in projects;
+- Full customizing of projects;
 - Supports all custom dynamic settings of projects;
+- Taking a screenshot of animation;
 - Supports all original events and input types from Wallpaper Engine;
 - Supports downloading of source in `.zip`;
 - Real-time editor of your Javascript Canvas-animation;
+- Debug menu;
 - Cross-browser support;
 - Desktop and Mobile (Android and IOS) platforms support.
 
