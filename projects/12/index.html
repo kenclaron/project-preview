@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="default.css">
+  <style>
+    body {
+      background-color: white;
+    }
+
+    .image {
+      position: absolute;
+      top: calc(-4.5vh);
+      left: calc(-4.5vw);
+      width: 100vw;
+      height: 100vh;
+      background-size: cover;
+      background-repeat: no-repeat!important;
+      zoom: 1.1;
+    }
+
+    #background {
+      z-index: 2;
+      background: url('content/background_image/darkest_sunwave.jpg') center center;
+    }
+
+    #background-front {
+      z-index: 3;
+      background: url('content/background_image/darkest_sunwave.jpg') center center, red;
+      background-blend-mode: lighten; /* no blend mode +effect */ /* red/cyan && blue/yellow */
+      margin-left: 5px;
+      mix-blend-mode: darken;
+    }
+
+    #background-front2 {
+      z-index: 4;
+      background: url('content/background_image/darkest_sunwave.jpg') center center, cyan;
+      background-blend-mode: darken;
+      mix-blend-mode: lighten;
+    }
+
+    #background-back {
+      z-index: 4;
+      background: url('content/background_image/darkest_sunwave.jpg') center center, white;
+      mix-blend-mode: lighten;
+    }
+  </style>
+  <script src="dwt.js"></script>
+  <script>
+    var settings = {
+      speed: 100,
+      background_size: 100,
+      background_color: "#000000",
+      animation_effect: true,
+      background_image: "content/background_image/darkest_sunwave.jpg",
+      min_shiftX: 2,
+      min_shiftY: 2,
+      shiftX: 2,
+      shiftY: 2,
+      colorfilter: 1
+    }
+    var t = 0;
+    function run() {
+      let background       = document.getElementById("background");
+      let backgroundFront  = document.getElementById("background-front");
+      let backgroundFront2 = document.getElementById("background-front2");
+      let backgroundBack   = document.getElementById("background-back");
+      
+      document.body.style.background = settings.background_color;
+
+      background.style.background       = `url('${settings.background_image}') center center`;
+      backgroundFront.style.background  = `url('${settings.background_image}') center center`;
+      backgroundFront2.style.background = `url('${settings.background_image}') center center`;
+      backgroundBack.style.background   = `url('${settings.background_image}') center center`;
+      
+      background.style.transform       = "scale("+(settings.background_size/100)+")";
+      backgroundFront.style.transform  = "scale("+(settings.background_size/100)+")";
+      backgroundFront2.style.transform = "scale("+(settings.background_size/100)+")";
+      backgroundBack.style.transform   = "scale("+(settings.background_size/100)+")";
+      
+      if(settings.colorfilter == 1) {
+        backgroundFront.style.backgroundColor  = `red`;
+        backgroundFront2.style.backgroundColor = `cyan`;
+        backgroundBack.style.backgroundColor   = `cyan`;
+      }
+      else if(settings.colorfilter == 2) {
+        backgroundFront.style.backgroundColor  = `green`;
+        backgroundFront2.style.backgroundColor = `magenta`;
+        backgroundBack.style.backgroundColor   = `magenta`
+      }
+      else if(settings.colorfilter == 3) {
+        backgroundFront.style.backgroundColor  = `blue`;
+        backgroundFront2.style.backgroundColor = `yellow`;
+        backgroundBack.style.backgroundColor   = `yellow`
+      }
+      else if(settings.colorfilter == 4) {
+        backgroundFront.style.backgroundColor  = `white`;
+        backgroundFront2.style.backgroundColor = `white`;
+        backgroundBack.style.backgroundColor   = `white`
+      }
+      
+      if(settings.background_image == "") {
+        document.getElementById("img-info").innerText = "Background Image not selected";
+        backgroundFront2.style.backgroundColor = `black`;
+        backgroundBack.style.backgroundColor   = `black`
+      }
+      else {
+        document.getElementById("img-info").innerText = "";
+      }
+      
+      intervalId = setInterval(function() {
+        let shiftX = 0;
+        let shiftY = 0;
+
+        if(settings.animation_effect) {
+          shiftX = settings.shiftX*(S(t))+settings.shiftX+settings.min_shiftX;
+          shiftY = settings.shiftY*(S(t))+settings.shiftY+settings.min_shiftY;
+        }
+        else {
+          shiftX = (settings.shiftX);
+          shiftY = (settings.shiftY);
+        }
+        
+        background.style.marginLeft       = `${shiftX}px`;
+        background.style.marginTop        = `${shiftY}px`;
+        backgroundFront2.style.marginLeft = `${-shiftX}px`;
+        backgroundFront2.style.marginTop  = `${-shiftY}px`;
+
+        t += 0.025 * settings.speed / 100;
+      }, 1000/60)
+    }
+    </script>
+</head>
+<body>
+  <div class="image" id="background-front2"></div>
+  <div class="image" id="background-front"></div>
+  <div class="image" id="background"></div>
+  <div class="image" id="background-back"></div>
+  <p id="img-info" style="z-index: 9999; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 48px; font-family: monospace; color: white; text-shadow: 0px 0px 4px black;"></p>
+</body>
+</html>

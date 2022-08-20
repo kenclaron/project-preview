@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="default.css">
+  <script src="dwt.js"></script>
+  <script>
+    var settings = {
+      speed: 100,
+      background_color: "#252525",
+      size: 100,
+      top: 50,
+    }
+    var x;
+    var t = 100;
+    var P = [];
+    var rnd = Math.random()*1;
+    function run() {
+      intervalId = setInterval(function() {
+        document.body.style.backgroundColor = settings.background_color;
+        c.width ^= 0;
+        
+        for(i = 0; i < 384+c.height/4; i++) { 
+          y=i/80-1;
+          w=y>.7?3e3:(1-y*y)**.5*(settings.size*6.4);
+          e=T(t/9+i*w);
+          x.fillStyle=`hsl(${-y}rad 99%50%)`;
+          x.fillRect(c.width/2-w/2+e, 4*(i+(c.height-540)/20)*settings.size/100+c.height/5*settings.top/50, w+e, 4*1.25*settings.size/100);
+        }
+
+
+        t += 0.025 * settings.speed / 100;
+      }, 1000/60)
+    }
+  </script>
+</head>
+<body>
+  <canvas id="canvas">canvas not working on this device</canvas>
+</body>
+</html>

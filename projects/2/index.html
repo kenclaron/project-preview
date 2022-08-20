@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Square²</title>
+  <link rel="stylesheet" href="default.css?3">
+  <script src="dwt.js?5"></script>
+  <script>
+    var settings = {
+      stoplast: false,
+
+      border: false,
+      border_size: 25,
+
+      squares: 5,
+      size: 50,
+      color: "#ee3333",
+      backgroundcolor: "#333333",
+      opacity_all: true,
+      opacity: 100/100
+    }
+    var clear = true;
+    var x;
+    var t = 0;
+    var mode = true;
+    function run() {
+      document.body.style.backgroundColor = settings.backgroundcolor;
+      intervalId = setInterval(function() {
+        c.width = c.scrollWidth;
+        c.height = c.scrollHeight;
+        x.clearRect(0, 0, c.width, c.height);
+        for(i=+settings.squares+1;i--;) {
+          r=i*settings.size;
+          if(i != settings.squares || !settings.stoplast) {
+            x.translate(0, 0)
+            x.rotate(C(i+t+T(5))/80)
+          }
+          if(i == settings.squares && settings.border) {
+            x.fillStyle=R(0,0,0,settings.opacity/100)
+            x.lineWidth = settings.border_size;
+            if(settings.opacity_all) x.strokeStyle = R(0, 0, 0, settings.opacity/100);
+            if(settings.border_size != 0) x.strokeRect(c.width/2-r/2-settings.border_size/2,c.height/2-r/2-settings.border_size/2,r+(+settings.border_size),r+(+settings.border_size))
+          }
+          if(!settings.opacity_all) {
+            x.fillRect(c.width/2-r/2,c.height/2-r/2,r,r)
+          }
+          x.fillStyle=R(hexToDec(settings.color.replace("#", "").match(/.{1,2}/g)[0])*2/i,
+                        hexToDec(settings.color.replace("#", "").match(/.{1,2}/g)[1])*2/i,
+                        hexToDec(settings.color.replace("#", "").match(/.{1,2}/g)[2])*2/i,
+                        settings.opacity/100/i)
+          x.fillRect(c.width/2-r/2,c.height/2-r/2,r,r)
+        }
+
+        // Nvidia Driver error ???
+        //for(c.width^=0,i=5;i--;){
+        //  r=i*99
+        //  x.rotate(C(i+t+T(t/2))/80)
+        //  x.fillStyle=R(0,r/9,r/7,0.3)
+        //  x.translate(0,0)
+        //  x.fillRect(950-r/2,530-r/2,r,r)
+        //}
+        
+        t += 0.025;
+      }, 1000/60);
+    }
+    function hexToDec(hex) {
+      var result = 0, digitValue;
+      hex = hex.toLowerCase();
+      for (var i = 0; i < hex.length; i++) {
+        digitValue = '0123456789abcdefgh'.indexOf(hex[i]);
+        result = result * 16 + digitValue;
+      }
+      return result;
+    }
+  </script>
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="default.css">
+  <style>
+    center {
+      z-index: 999999;
+      min-width: 128px;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    center p {
+      font-family: monospace;
+      max-width: 512px;
+      color: white;
+    }
+  </style>
+  <script src="dwt.js"></script>
+  <script>
+    var x;
+    var t = 0;
+    var code;
+    function run(ncode) {
+      document.getElementById("error").style.display = "none";
+      document.getElementById("error-img").style.display = "none";
+      if(ncode) code = ncode;
+      intervalId = setInterval(function() {
+        try {
+          code = code.replace("alert", "").replace("document.cookie", "").replace("window.localStorage", "");
+          eval(code);
+          t += 0.1 / 100;
+        }
+        catch(err) {
+          document.getElementById("error").textContent = "ERROR: "+err;
+          document.getElementById("error").style.display = "block";
+          document.getElementById("error-img").style.display = "block";
+        }
+      }, 1000/24)
+    }
+  </script>
+</head>
+<body>
+  <canvas id="canvas">canvas not working on this device</canvas>
+  <center>
+    <img id="error-img" src="error.png" width="128px" height="128px" style="display: none;">
+    <p id="error" style="display: none;">ERROR</p>
+  </center>
+</body>
+</html>

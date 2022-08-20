@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="default.css">
+  <script src="dwt.js"></script>
+  <script>
+    var settings = {
+      speed: 100,
+      particles_color: "#f03232",
+      background_color: "#252525"
+    }
+    var x;
+    var t = 0;
+    function run() {
+      intervalId = setInterval(function() {
+        document.body.style.backgroundColor = settings.background_color;
+        x.fillStyle = settings.particles_color;
+        x.clearRect(0,0,i=2e3,i)
+        let ti = 0;
+        for(ti+=90;p=i&1,m=ti/C(ti/i)+p*(ti/2+i%ti),i--;)
+          x.fillRect(
+          (c.width/2)+m*S(n=ti+t/9+i*i)*C(!p*i/ti),
+          (c.height/2)+m*C(n+p*2),s=3-C(n)*3,s)
+        t += 0.1 * settings.speed / 100;
+      }, 1000/60)
+    }
+  </script>
+</head>
+<body>
+  <canvas id="canvas">canvas not working on this device</canvas>
+</body>
+</html>

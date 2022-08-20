@@ -1,0 +1,96 @@
+{
+	"contentrating": "Everyone",
+	"description" : "Square animation",
+	"file" : "index.html",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "Schemecolor",
+				"type" : "color",
+				"value" : "0 0 0"
+			},
+			"stoplast":
+			{
+				"order" : 1,
+				"text" : "Stop Last",
+				"type" : "bool",
+				"value" : false
+			},
+			"border":
+			{
+				"order" : 2,
+				"text" : "Border",
+				"type" : "bool",
+				"value" : false
+			},
+			"border_size":
+			{
+				"order" : 3,
+				"text" : "Border Size",
+				"type" : "slider",
+				"min" : 0,
+				"max" : 50,
+				"value" : 25
+			},
+			"squares":
+			{
+				"order" : 3,
+				"text" : "Number Of Squares",
+				"type" : "slider",
+				"min" : 1,
+				"max" : 20,
+				"value" : 5
+			},
+			"size":
+			{
+				"order" : 4,
+				"text" : "Size",
+				"type" : "slider",
+				"min" : 1,
+				"max" : 200,
+				"value" : 50
+			},
+			"color":
+			{
+				"order" : 5,
+				"text" : "Color",
+				"type" : "color",
+				"value" : "0.85 0.2 0.2"
+			},
+			"backgroundcolor":
+			{
+				"order" : 6,
+				"text" : "Background Color",
+				"type" : "color",
+				"value" : "0.12 0.12 0.12"
+			},
+			"opacity_all":
+			{
+				"order" : 7,
+				"text" : "Opacity All",
+				"type" : "bool",
+				"value" : true
+			},
+			"opacity" : 
+			{
+				"order" : 8,
+				"text" : "Opacity Level",
+				"type" : "slider",
+				"min" : 0,
+				"max" : 100,
+				"value" : 100
+			}
+		}
+	},
+	"preview" : "preview.png",
+	"tags" : [ "Relaxing" ],
+	"title" : "Square^2",
+	"type" : "web",
+	"visibility" : "public",
+	"download" : true,
+	"steamworkshoplink" : "https://steamcommunity.com/sharedfiles/filedetails/?id=1796445728"
+}

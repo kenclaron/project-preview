@@ -1,0 +1,104 @@
+{
+	"general" : 
+	{
+		"properties" : 
+		{
+      "separator_0" :
+      {
+				"type" : "separator",
+				"value" : "Menu"
+			},
+      "transparent_menu" :
+      {
+        "order" : 1,
+        "text" : "Transparent Menu",
+        "type" : "bool",
+				"value" : true,
+				"eval" : "TouchMenu.editTransparencyMenu(obj['main']['transparent_menu']);"
+      },
+      "transparent_open_menu_button" :
+      {
+        "order" : 2,
+        "text" : "Transparent Open Menu Button",
+        "type" : "bool",
+				"value" : false,
+				"eval" : ""
+      },
+      "blackout_menu" :
+      {
+        "order" : 3,
+        "text" : "Blackout In Menu",
+        "type" : "bool",
+				"value" : true,
+				"eval" : "TouchMenu.editBlackoutMenu(obj['main']['blackout_menu']);"
+      },
+      "always_full_menu" :
+      {
+        "order" : 4,
+        "text" : "Always Full Menu",
+        "type" : "bool",
+				"value" : false,
+				"eval" : "TouchMenu.editSize(obj['main']['always_full_menu']);"
+      },
+      "extended_menu" :
+      {
+        "order" : 5,
+        "text" : "Extended Menu",
+        "type" : "bool",
+				"value" : true,
+				"eval" : "TouchMenu.editExtendedMenu(obj['main']['extended_menu']);"
+      },
+      "separator_1" :
+      {
+				"type" : "separator",
+				"value" : "Animation"
+			},
+      "scale_animation" :
+      {
+        "condition" : "obj['main']['debug_mode'] == true",
+        "order" : 10,
+        "text" : "Scale",
+        "type" : "slider",
+        "min" : 100,
+        "max" : 500,
+				"value" : 100,
+				"eval" : "let zlvl = obj['main']['scale_animation']/100; document.getElementById('animation').style.zoom = zlvl; document.getElementById('animation').style.transform = 'scale('+zlvl+')'"
+      },
+      "separator_2" :
+      {
+				"type" : "separator",
+        "value" : "Editor",
+        "blocked" : true
+			},
+      "editor_eval_evil_mode" :
+      {
+        "order" : 20,
+        "text" : "Editor Eval Evil Mode [w]",
+        "type" : "bool",
+				"value" : false,
+        "eval" : "",
+        "blocked" : true
+      },
+      "separator_3" :
+      {
+				"type" : "separator",
+				"value" : "Debug"
+			},
+      "debug_mode" :
+      {
+        "order" : 30,
+        "text" : "Debug Mode",
+        "type" : "bool",
+				"value" : false,
+				"eval" : "if(obj['main']['debug_mode']) { document.getElementById('debug').style.display = 'block'; ResetLoop(); } else document.getElementById('debug').style.display = 'none';"
+      },
+      "separator_4" :
+      {
+				"type" : "separator",
+				"value" : ""
+			}
+		}
+	},
+	"title" : "Settings",
+	"type" : "settings"
+}

@@ -1,0 +1,82 @@
+{
+	"contentrating": "Everyone",
+	"description" : "Ah shit, here we go again | GTA Animation",
+	"file" : "index.html",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "Schemecolor",
+				"type" : "color",
+				"value" : "0 0 0"
+			},
+			"background_color" : 
+			{
+				"order" : 2,
+				"text" : "Background Color",
+				"type" : "color",
+				"value" : "0.0 0.0 0.0"
+			},
+			"background_image" : 
+			{
+				"order" : 3,
+				"text" : "Background Image",
+				"type" : "file",
+				"value" : "content/background_image/gtasa.jpg"
+			},
+			"shake_effect" : 
+			{
+				"order" : 4,
+				"text" : "Shake Effect",
+				"type" : "bool",
+				"value" : true
+			},
+			"shake_speed" : 
+			{
+				"order" : 5,
+				"text" : "Shake Speed",
+				"type" : "slider",
+				"min" : 0,
+				"max" : 200,
+				"value" : 100
+			},
+			"cj_size" : 
+			{
+				"order" : 6,
+				"text" : "CJ Size",
+				"type" : "slider",
+				"min" : 20,
+				"max" : 100,
+				"value" : 40
+			},
+			"position_x" : 
+			{
+				"order" : 6,
+				"text" : "CJ X-axis Position",
+				"type" : "slider",
+				"min" : -100,
+				"max" : 100,
+				"value" : 0
+			},
+			"position_y" : 
+			{
+				"order" : 7,
+				"text" : "CJ Y-axis Position",
+				"type" : "slider",
+				"min" : -100,
+				"max" : 100,
+				"value" : 0
+			}
+		}
+	},
+	"preview" : "preview.png",
+	"tags" : [ "Relaxing" ],
+	"title" : "Ah shit, here we go again | GTA Animation",
+	"type" : "web",
+	"visibility" : "public",
+	"download" : false,
+	"steamworkshoplink" : "https://steamcommunity.com/sharedfiles/filedetails/?id=1829713244"
+}

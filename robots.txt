@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /download.php
+Disallow: /zip.lib.php
+Disallow: /settings.json
+Disallow: /css/
+Disallow: /js/
+Disallow: /projects/

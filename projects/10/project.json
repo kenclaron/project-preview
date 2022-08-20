@@ -1,0 +1,59 @@
+{
+	"contentrating": "Everyone",
+	"description" : "Sun Retro Rave",
+	"file" : "index.html",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "Schemecolor",
+				"type" : "color",
+				"value" : "0 0 0"
+			},
+			"speed" : 
+			{
+				"order" : 1,
+				"text" : "Speed",
+				"type" : "slider",
+				"min" : 0,
+				"max" : 200,
+				"value" : 100
+			},
+			"background_color" : 
+			{
+				"order" : 2,
+				"text" : "Background Color",
+				"type" : "color",
+				"value" : "0.1 0.1 0.1"
+			},
+			"size" : 
+			{
+				"order" : 3,
+				"text" : "Size",
+				"type" : "slider",
+				"min" : 50,
+				"max" : 150,
+				"value" : 100
+			},
+			"top" : 
+			{
+				"order" : 4,
+				"text" : "Position Top",
+				"type" : "slider",
+				"min" : 0,
+				"max" : 100,
+				"value" : 50
+			}
+		}
+	},
+	"preview" : "preview.png",
+	"tags" : [ "Relaxing" ],
+	"title" : "Sun Retro Rave",
+	"type" : "web",
+	"visibility" : "public",
+	"download" : true,
+	"steamworkshoplink" : "https://steamcommunity.com/sharedfiles/filedetails/?id=1796456925"
+}

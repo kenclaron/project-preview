@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="default.css">
+  <script src="dwt.js"></script>
+  <script>
+    var settings = {
+      speed: 100,
+      moon_size: 250,
+      moon_left: 700,
+      moon_top: 600
+    }
+    var x;
+    var t = 100;
+    var rnd = Math.round(Math.random()*window.innerWidth/2);
+    function run() {
+      intervalId = setInterval(function() {
+        document.body.style.backgroundColor = "#000";
+        for(i=F=2e3;i--;x.fillRect(i,Y,2,99)) {
+          k=S(i)**2+1;
+          Y=k*(1e9+t*1e3)%F-1199+99/t;
+          x.fillStyle=R(z = i%2 ? ((c.width/2+(settings.moon_left-600))-i)**2+(c.height/2+(settings.moon_top-600)-Y)**2 < (6*settings.moon_size/100)*10**3 ? F : 0:99,z,z+30,.5)
+        }
+        t += 0.01 * settings.speed / 100;
+      }, 1000/60)
+    }
+  </script>
+</head>
+<body>
+  <canvas id="canvas">canvas not working on this device</canvas>
+</body>
+</html>

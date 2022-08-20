@@ -1,0 +1,43 @@
+{
+	"contentrating": "Everyone",
+	"description" : "Matrix",
+	"file" : "index.html",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "Schemecolor",
+				"type" : "color",
+				"value" : "0 0 0"
+			},
+			"speed" : 
+			{
+				"order" : 1,
+				"text" : "Speed",
+				"type" : "slider",
+				"min" : 0,
+				"max" : 500,
+				"value" : 100
+			},
+			"size" : 
+			{
+				"order" : 1,
+				"text" : "Size",
+				"type" : "slider",
+				"min" : 1,
+				"max" : 32,
+				"value" : 16
+			}
+		}
+	},
+	"preview" : "preview.png",
+	"tags" : [ "Relaxing" ],
+	"title" : "Matrix",
+	"type" : "web",
+	"visibility" : "public",
+	"download" : true,
+	"steamworkshoplink" : false
+}

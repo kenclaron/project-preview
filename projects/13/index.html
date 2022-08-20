@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="default.css">
+  <link rel="stylesheet" href="csshake-slow.css">
+  <style>
+    body {
+      background-color: white;
+    }
+
+    #background {
+      position: absolute;
+      z-index: 2;
+      left: -5vw;
+      top: -5vh;
+      width: 110vw;
+      height: 110vh;
+      background-size: cover!important;
+      background-repeat: no-repeat!important;
+      /*background: url('content/animation-ah-shit.gif') center bottom;*/
+    }
+    
+
+    #background-front {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 3;
+      width: 300vw;
+      height: 300vh;
+      background-size: 50%;
+      background-repeat: no-repeat!important;
+      background: url('content/animation-ah-shit.gif') center bottom;
+      zoom: 0.7;
+    }
+  </style>
+  <script src="dwt.js"></script>
+  <script>
+    var settings = {
+      background_size: 105,
+      background_color: "#000000",
+      background_image: "content/background_image/gtasa.jpg",
+      shake_effect: true,
+      shake_speed: 100,
+      cj_size: 40,
+      position_x: 0,
+      position_y: 0,
+    }
+    var t = 0;
+    function run() {
+      let background      = document.getElementById("background");
+      let backgroundFront = document.getElementById("background-front");
+      
+      document.body.style.background = settings.background_color;
+
+      background.style.background = `url('${settings.background_image}') center center`;
+      background.style.left = ((-settings.size+100)/2)+"vw";
+      background.style.top = ((-settings.size+100)/2)+"vh";
+      background.style.width = settings.size+"vw";
+      background.style.height = settings.size+"vh";
+
+      if(settings.shake_speed == 0) {
+        background.style.animationPlayState = "paused";
+      }
+      else {
+        background.style.animationPlayState = "running";
+        background.style.animationDuration = (30/(settings.shake_speed/100))+"s";
+      }
+
+      if(settings.shake_effect) background.className = "shake shake-slow shake-constant";
+      else background.className = "";
+      
+      backgroundFront.style.transform = "translate("+(settings.position_x-50)+"%, "+(settings.position_y)+"%)";
+      backgroundFront.style.backgroundSize = settings.cj_size+"%";
+
+      intervalId = setInterval(function() {
+        t += 0.05 * settings.speed / 100;
+      }, 1000/60)
+    }
+    </script>
+</head>
+<body>
+  <div id="background"></div>
+  <div id="background-front"></div>
+</body>
+</html>

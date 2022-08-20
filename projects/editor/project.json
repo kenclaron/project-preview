@@ -1,0 +1,17 @@
+{
+	"contentrating": "Everyone",
+	"description" : "Editor",
+	"file" : "index.html",
+	"general" : 
+	{
+		"properties" : 
+		{
+
+		}
+	},
+	"preview" : "preview.png",
+	"tags" : [ "Editor" ],
+	"title" : "Editor",
+	"type" : "web",
+	"visibility" : "public"
+}

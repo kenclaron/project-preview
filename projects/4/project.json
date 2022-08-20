@@ -1,0 +1,75 @@
+{
+	"contentrating": "Everyone",
+	"description" : "Waves animation",
+	"file" : "index.html",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "Schemecolor",
+				"type" : "color",
+				"value" : "0 0 0"
+			},
+			"speed" : 
+			{
+				"order" : 1,
+				"text" : "Speed",
+				"type" : "slider",
+				"min" : 0,
+				"max" : 200,
+				"value" : 100
+			},
+			"height" : 
+			{
+				"order" : 2,
+				"text" : "Height",
+				"type" : "slider",
+				"min" : 0,
+				"max" : 100,
+				"value" : 25
+			},
+			"count_squares_in_column" : 
+			{
+				"order" : 3,
+				"text" : "Count Squares in Column",
+				"type" : "slider",
+				"min" : 1,
+				"max" : 25,
+				"value" : 10
+			},
+			"saturation" : 
+			{
+				"order" : 4,
+				"text" : "Saturation",
+				"type" : "slider",
+				"min" : 0,
+				"max" : 100,
+				"value" : 100
+			},
+			"background_color" : 
+			{
+				"order" : 5,
+				"text" : "Background Color",
+				"type" : "color",
+				"value" : "0.1 0.1 0.1"
+			},
+			"from_one_line":
+			{
+				"order" : 6,
+				"text" : "From One Line",
+				"type" : "bool",
+				"value" : true
+			}
+		}
+	},
+	"preview" : "preview.png",
+	"tags" : [ "Relaxing" ],
+	"title" : "Cyanowaves",
+	"type" : "web",
+	"visibility" : "public",
+	"download" : true,
+	"steamworkshoplink" : "https://steamcommunity.com/sharedfiles/filedetails/?id=1796449972"
+}

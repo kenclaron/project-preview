@@ -1,0 +1,26 @@
+{
+	"contentrating" : "Everyone",
+	"description" : "External debt USA background",
+	"file" : "index.html",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "Schemecolor",
+				"type" : "color",
+				"value" : "1 1 1"
+			}
+		}
+	},
+	"preview" : "preview.png",
+	"tags" : [ "Relaxing" ],
+	"title" : "External debt USA",
+	"type" : "web",
+	"visibility" : "public",
+	"workshopid" : "1520453568",
+	"download" : true,
+	"steamworkshoplink" : "https://steamcommunity.com/sharedfiles/filedetails/?id=1520453568"
+}

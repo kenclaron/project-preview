@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="default.css">
+  <script src="dwt.js"></script>
+  <meta charset="utf-8" />
+  <title>Dept</title>
+  <style>
+    html, body {
+      margin: 0 auto;
+      overflow: hidden;
+      height: 100vh;
+      font-family: monospace;
+      text-transform: uppercase;
+      background: #000 url(back.gif) no-repeat center;
+      background-size: 150%;
+      user-select: none;
+    }
+    p {
+      margin: 0 auto;
+    }
+    #ui {
+      position: fixed;
+    }
+    #dept-element {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      height: 60px;
+      transform: perspective(400px) rotateX(5deg);
+    }
+    #dept-header {
+      box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.75);
+      background-color: rgb(220, 220, 220);
+      color: black;
+      font-weight: bold;
+      border: 1px solid rgba(0, 0, 0, 0.75);
+      width: 350px;
+      font-size: 20px;
+      border-radius: 10px;
+      z-index: 16;
+      position: relative;
+      top: -100px;
+    }
+    #dept-main {
+      box-shadow: 0 0 5px 2px rgb(125, 0, 0);
+      background-color: rgba(220, 220, 220, 0.85);
+      color: rgb(220, 50, 50);
+      font-weight: bold;
+      border: 3px solid rgba(0, 0, 0, 0.75);
+      width: 900px;
+      height: 50px;
+      padding-top: 50px;
+      font-size: 64px;
+      border-radius: 10px;
+      z-index: 7;
+      position: relative;
+      top: -10px;
+    }
+    #dept-main p {
+      margin-top: -40px;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    var settings = {
+      speed: 100,
+      particles_color: "#f03232",
+      background_color: "#252525"
+    }
+    var x;
+    var t = 0;  
+  </script>
+  <center>
+  <div id="dept-element">
+    <div id="dept-main"><p>$XX,XXX,XXX,XXX,XXX</p>
+      <div id="dept-header">External debt USA</div>
+    </div>
+  </div>
+  </center>
+  <script src="animation.js"></script>
+</body>
+</html>

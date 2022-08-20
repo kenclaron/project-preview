@@ -1,0 +1,57 @@
+#editor .container {
+  height: 187px;
+  width: calc(100% - 36px);
+  margin-left: 18px;
+}
+
+#editor .container p {
+  font-size: 14px !important;
+  font-family: Consolas, 'Courier New', monospace;
+  margin: 0 auto !important;
+  height: 17px;
+  width: 32px;
+}
+
+#editor .container-lines {
+  float: left;
+  background-color: rgba(0, 0, 0, 0.25);
+  min-height: 187px;
+  padding-right: 6px;
+}
+
+#editor textarea {
+  word-wrap: normal;
+  background-color: rgba(0, 0, 0, 0.1); 
+  color: #dcdce7; 
+  resize: none; 
+  overflow: hidden;
+  min-height: 187px;
+  min-width: calc(100% - 38px);
+  float: right;
+  padding: 0;
+  border: 0;
+  margin: 0;
+  font-size: 14px;
+  font-family: Consolas, 'Courier New', monospace;
+}
+
+@media (max-device-width: 512px) {
+  #editor .container {
+    height: calc(100% - 800px);
+  }
+  #settings #right-side #editor .container-lines {
+    display: none;
+  }
+  #editor textarea {
+    height: 100%!important;
+    min-width: 100%;
+    overflow: auto;
+    white-space: pre;
+  }
+}
+
+@media (max-device-width: 512px) and (display-mode: browser) {
+  #settigns #right-side #editor .container p, #editor textarea {
+    font-size: 32px;
+  }
+}

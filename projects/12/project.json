@@ -1,0 +1,126 @@
+{
+	"contentrating": "Everyone",
+	"description" : "Anaglyph 3D",
+	"file" : "index.html",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "Schemecolor",
+				"type" : "color",
+				"value" : "0 0 0"
+			},
+			"speed" : 
+			{
+				"order" : 1,
+				"text" : "Speed",
+				"type" : "slider",
+				"min" : 0,
+				"max" : 500,
+				"value" : 100
+			},
+			"background_size" : 
+			{
+				"order" : 2,
+				"text" : "Background Size",
+				"type" : "slider",
+				"min" : 50,
+				"max" : 250,
+				"value" : 100
+			},
+			"background_color" : 
+			{
+				"order" : 3,
+				"text" : "Background Color",
+				"type" : "color",
+				"value" : "0.0 0.0 0.0"
+			},
+			"background_image" : 
+			{
+				"order" : 4,
+				"text" : "Background Image",
+				"type" : "file",
+				"value" : "content/background_image/darkest_sunwave.jpg"
+			},
+			"animation_effect" :
+			{
+				"order" : 5,
+				"text" : "Animation Effect",
+				"type" : "bool",
+				"value" : true
+			},
+			"min_shiftX" : 
+			{
+				"order" : 6,
+				"text" : "X-axis Min Shift Glyph",
+				"type" : "slider",
+				"min" : -10,
+				"max" : 10,
+				"value" : 2
+			},
+			"min_shiftY" : 
+			{
+				"order" : 7,
+				"text" : "Y-axis Min Shift Glyph",
+				"type" : "slider",
+				"min" : -10,
+				"max" : 10,
+				"value" : 2
+			},
+			"shiftX" : 
+			{
+				"order" : 8,
+				"text" : "X-axis Max Shift Glyph",
+				"type" : "slider",
+				"min" : -10,
+				"max" : 10,
+				"value" : 2
+			},
+			"shiftY" : 
+			{
+				"order" : 9,
+				"text" : "Y-axis Max Shift Glyph",
+				"type" : "slider",
+				"min" : -10,
+				"max" : 10,
+				"value" : 2
+			},
+			"colorfilter" : 
+			{
+				"options" : 
+				[
+					{
+						"label" : "red/cyan",
+						"value" : 1
+					},
+					{
+						"label" : "green/magenta",
+						"value" : 2
+					},
+					{
+						"label" : "blue/yellow",
+						"value" : 3
+					},
+					{
+						"label" : "no filter",
+						"value" : 4
+					}
+				],
+				"order" : 10,
+				"text" : "Color Filter",
+				"type" : "combo",
+				"value" : 1
+			}
+		}
+	},
+	"preview" : "preview.png",
+	"tags" : [ "Relaxing" ],
+	"title" : "Anaglyph 3D",
+	"type" : "web",
+	"visibility" : "public",
+	"download" : true,
+	"steamworkshoplink" : "https://steamcommunity.com/sharedfiles/filedetails/?id=1817857267"
+}

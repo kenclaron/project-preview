@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="default.css">
+  <script src="dwt.js"></script>
+  <script>
+    var settings = {
+      speed: 100,
+      size: 100
+    }
+    var x;
+    var t = 100;
+    var rnd = Math.round(Math.random()*window.innerWidth/2);
+    function run() {
+      intervalId = setInterval(function() {
+        document.body.style.backgroundColor = "#000";
+        x.clearRect(0,0,c.width,c.height);
+        for(i=c.width; z=--i**.3; x.fillStyle=R(0,500/--z)) {
+          x.setTransform(s=20/z,0,0,s,0,0);
+          x.font=settings.size+'px q';
+          x.fillText('マトリックスしいルでメ'[i%11],-120+i*99%c.width,t%z*60);
+        }
+        t += 0.01 * settings.speed / 100;
+      }, 1000/60)
+    }
+  </script>
+</head>
+<body>
+  <canvas id="canvas">canvas not working on this device</canvas>
+</body>
+</html>

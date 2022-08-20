@@ -1,0 +1,50 @@
+{
+	"contentrating": "Everyone",
+	"description" : "Circle Rays Nights and Days",
+	"file" : "index.html",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "Schemecolor",
+				"type" : "color",
+				"value" : "0 0 0"
+			},
+			"speed" : 
+			{
+				"order" : 1,
+				"text" : "Speed",
+				"type" : "slider",
+				"min" : 0,
+				"max" : 500,
+				"value" : 100
+			},
+			"size" : 
+			{
+				"order" : 1,
+				"text" : "Size",
+				"type" : "slider",
+				"min" : 10,
+				"max" : 300,
+				"value" : 100
+			},
+			"full_size" : 
+			{
+				"order" : 1,
+				"text" : "Full Size",
+				"type" : "bool",
+				"value" : false
+			}
+		}
+	},
+	"preview" : "preview.png",
+	"tags" : [ "Relaxing" ],
+	"title" : "Circle Rays Nights and Days",
+	"type" : "web",
+	"visibility" : "public",
+	"download" : true,
+	"steamworkshoplink" : "https://steamcommunity.com/sharedfiles/filedetails/?id=1796452937"
+}
