@@ -17,8 +17,8 @@ function setOriginalCanvas() {
   c.height = c.scrollHeight;
 }
 
-function SetValueSettings(variable, value) {
-  settings[variable] = value;
+function SetValueSettings(letiable, value) {
+  settings[letiable] = value;
 }
 
 function onresize() {
@@ -43,7 +43,7 @@ window.addEventListener("resize", function() {
 });
 
 function ComponentToHex(c) {
-  var hex = c.toString(16);
+  let hex = c.toString(16);
   return hex.length == 1 ? "0" + hex : hex;
 }
 

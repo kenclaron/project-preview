@@ -1,6 +1,6 @@
 <script>
 let lastScrollTop = 0;
-var HEADER = document.getElementById("bar-header");
+const HEADER = document.getElementById("bar-header");
 
 window.addEventListener("scroll", function(e) {
     let diff = lastScrollTop - window.pageYOffset;
