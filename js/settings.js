@@ -7,7 +7,7 @@ const TABLE_ELEMENTS = {
 const FRAME = window.frames["animation"];
 
 const url = new URL(window.location.href);
-var projectId = null;
+let projectId = null;
 
 projectId = Number(String(url.searchParams.get("id")).replace(/\D+/g,""));
 try { window.history.replaceState(null, null, window.location.href.replace("?i=1", "")); }
@@ -23,8 +23,8 @@ if(projectId == null || projectId < 1) {
   catch (err) { console.warn(err); }
 }
 
-var project = {};
-var files = {
+let project = {};
+let files = {
   links: [],
   previews: [],
   names: [],
@@ -637,7 +637,7 @@ function GetColor(rawColorValue, toHex)
 }
 
 function ComponentToHex(c) {
-  var hex = c.toString(16);
+  let hex = c.toString(16);
   return hex.length == 1 ? "0" + hex : hex;
 }
 

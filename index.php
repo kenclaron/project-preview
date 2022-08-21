@@ -44,7 +44,7 @@
   <!-- End Open Graph -->
 </head>
 <body>
-  <script>const VERSION = "PROJECT PREVIEW - 2.0.0";</script>
+  <script>const VERSION = "PROJECT PREVIEW - 2.0.1";</script>
   <?php 
     echo file_get_contents("./global/preloader/preloader.php");
   ?>
@@ -52,13 +52,6 @@
   <script id="iframe-preview-script">
     function LoadIframe() 
     {
-      if(projectId == "editor") {
-        FRAME.code = document.getElementById('editor-area').value;
-        OneUpdateSettings();
-        document.getElementById("iframe-preview-script").remove();
-        return;
-      }
-
       console.log("[main] Load iframe");
 
       try { 
@@ -232,7 +225,7 @@
     <script src="js/hammerjs/hammer.min.js"></script>
     <script src="js/touchmenu/js/touch-menu-la.js"></script>
     <script>
-      var TouchMenu = TouchMenuLA({ target: document.getElementById('settings') });
+      let TouchMenu = TouchMenuLA({ target: document.getElementById('settings') });
       TouchMenu.close();
       console.log("[main] TouchMenu was created");
     </script>

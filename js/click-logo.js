@@ -97,7 +97,7 @@ function RanRgb()
 
 function RanVel()
 {
-	var vel = 0;
+	let vel = 0;
 	
 	if(Math.random() < 0.5){
 		vel = Math.abs(Math.random());

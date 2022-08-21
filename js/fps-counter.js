@@ -3,9 +3,9 @@ const COLORS_COUNTER = ["#f03535", "#f0f035",
                         "#3535c0", "#903590"];
 
 /* create html */
-var debug = document.getElementById("debug");
+let debug = document.getElementById("debug");
 
-var DEBUG_ELEMENTS = {
+let DEBUG_ELEMENTS = {
   "FPS":      {},
   "MIN":      {},
   "FRAMES":   {},
@@ -49,17 +49,17 @@ for(element in DEBUG_ELEMENTS) {
 
 /*************/
 
-var canvas_fps = document.createElement("canvas");
+let canvas_fps = document.createElement("canvas");
 canvas_fps.width = 300;
 canvas_fps.height = 30;
 
-var ctx_fps = canvas_fps.getContext("2d");
+let ctx_fps = canvas_fps.getContext("2d");
 ctx_fps.clearRect(0, 0, canvas_fps.width, canvas_fps.height);
 ctx_fps.fillStyle = "#000"
 debug.append(canvas_fps);
 
-var DEBUG_CURRENT = DEBUG_DEFAULT;
-var DEBUG_TIME_START = Date.now();
+let DEBUG_CURRENT = DEBUG_DEFAULT;
+let DEBUG_TIME_START = Date.now();
 
 function ResetLoop() {
   DEBUG_CURRENT = DEBUG_DEFAULT;

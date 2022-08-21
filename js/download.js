@@ -2,7 +2,7 @@
 
 // data can be a string, Blob, File, or dataURL
 function download(data, strFileName, strMimeType) {
-	var self = window, // this script is only for browsers anyway...
+	let self = window, // this script is only for browsers anyway...
 		u = "application/octet-stream", // this default mime also triggers iframe downloads
 		m = strMimeType || u, 
 		x = data,
@@ -45,7 +45,7 @@ function download(data, strFileName, strMimeType) {
 	}
 	
 	function d2b(u) {
-		var p= u.split(/[:;,]/),
+		let p= u.split(/[:;,]/),
 		t= p[1],
 		dec= p[2] == "base64" ? atob : decodeURIComponent,
 		bin= dec(p.pop()),
@@ -73,7 +73,7 @@ function download(data, strFileName, strMimeType) {
 			return true;
 		}
 		
-		var f = D.createElement("iframe");
+		let f = D.createElement("iframe");
 		D.body.appendChild(f);
 		if(!winMode){ // force a mime that will download:
 			url="data:"+url.replace(/^data:([\w\/\-\+]+)/, u);

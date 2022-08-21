@@ -1,6 +1,6 @@
 console.log("[ripple.js] Version - 1.1 (for Project Preview)");
 
-var a = document.getElementsByClassName('ripple');
+let a = document.getElementsByClassName('ripple');
 
 window.addEventListener("load", function(e) {
   AddEventRipple();
@@ -13,15 +13,15 @@ function AddEventRipple() {
 }
 
 function CreateRipple (e) {
-  var circle = document.createElement('div');
+  let circle = document.createElement('div');
   this.appendChild(circle);
 
-  var d = Math.max(this.clientWidth, this.clientHeight);
+  let d = Math.max(this.clientWidth, this.clientHeight);
 
   circle.style.width = circle.style.height = d + 'px';
   circle.style.transition = "all 0.05s ease-out !important;"
 
-  var rect = this.getBoundingClientRect();
+  let rect = this.getBoundingClientRect();
   circle.style.left = e.clientX - rect.left -d/2 + 'px';
   circle.style.top = e.clientY - rect.top - d/2 + 'px';
 

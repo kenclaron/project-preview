@@ -17,8 +17,8 @@ function setOriginalCanvas() {
   c.height = c.scrollHeight;
 }
 
-function SetValueSettings(variable, value) {
-  settings[variable] = value;
+function SetValueSettings(letiable, value) {
+  settings[letiable] = value;
 }
 
 function onresize() {
