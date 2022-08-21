@@ -10,7 +10,7 @@ Wallpaper Engine but online-version. View animated wallpapers directly in your b
 
 **Check this project here**: [projectpreview.ufh.in](http://projectpreview.ultimatefreehost.in/w/1)
 
-## Table of contents
+## Table of Contents
 - [Preview](#preview)
   - [Video](#video)
   - [Images](#images)
@@ -18,7 +18,9 @@ Wallpaper Engine but online-version. View animated wallpapers directly in your b
 - [Project folder description](#project-folder-description)
 - [Usage](#usage)
 - [Requirements](#requirements)
-- [Libraries or frameworks](#libraries-or-frameworks)
+  - [Browsers](#browsers)
+  - [Software](#software)
+- [Dependencies](#dependencies)
 - [Inspired by](#inspired-by)
 - [License](#license)
 - [Author](#author)
@@ -85,7 +87,7 @@ project-preview/
 * Any software using Blink 49 or latest
 * Any software using V8 4.9.385 or latest
 
-## Libraries or frameworks
+## Dependencies 
 * **jQuery** - v3.6.0
 * **HammerJS** - v2.0.6
 * **Touch-Menu-Like-Android** - v0.8
