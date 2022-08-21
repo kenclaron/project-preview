@@ -28,7 +28,8 @@ Wallpaper Engine but online-version. View animated wallpapers directly in your b
 ## Preview
 
 ### Video
-<video src='https://www.youtube.com/watch?v=9gkEwY_h9lA' width=45%/> | [<img src="https://i.imgur.com/f9TEyd7.gif" width="45%"](https://i.imgur.com/f9TEyd7.gif)
+Video - https://www.youtube.com/watch?v=9gkEwY_h9lA
+Gif -  https://i.imgur.com/f9TEyd7.gif
 
 ### Images
 [<img src="https://i.imgur.com/LNfkUP5.jpg" width="45%"/>](https://i.imgur.com/LNfkUP5.jpg) | [<img src="https://i.imgur.com/rcUDfW6.jpg" width="45%"/>](https://i.imgur.com/rcUDfW6.jpg)
