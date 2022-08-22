@@ -10,7 +10,7 @@ Wallpaper Engine but online-version. View animated wallpapers directly in your b
 
 **Solution with**: HTML5, CSS3, JavaScript (ES6), PHP7+
 
-**Check this project here**: [projectpreview.ufh.in](http://projectpreview.ultimatefreehost.in/w/1) (USE HTTP ONLY!)
+**Check this project here**: [http://projectpreview.ultimatefreehost.in](http://projectpreview.ultimatefreehost.in/w/1) (USE HTTP ONLY!)
 
 ## Table of Contents
 - [Preview](#preview)
