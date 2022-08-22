@@ -1,5 +1,7 @@
 # Project Preview - Web Wallpaper Engine
-![[github](https://img.shields.io/github/downloads/kenclaron/project-preview/total.svg)](https://img.shields.io/github/license/kenclaron/project-preview?style=for-the-badge)
+![github](https://img.shields.io/github/license/kenclaron/project-preview?style=for-the-badge)
+![website-http](https://img.shields.io/website?down_message=offline&label=HTTP%20website&style=for-the-badge&up_message=online&url=http%3A%2F%2Fprojectpreview.ultimatefreehost.in)
+![website-https](https://img.shields.io/website?down_message=offline&label=HTTPS%20website&style=for-the-badge&up_message=online&url=https%3A%2F%2Fprojectpreview.ultimatefreehost.in)
 
 ## About
 Wallpaper Engine but online-version. View animated wallpapers directly in your browser. 
