@@ -12,10 +12,17 @@ Wallpaper Engine but online-version. View animated wallpapers directly in your b
 
 **Check this project here**: [http://projectpreview.ultimatefreehost.in](http://projectpreview.ultimatefreehost.in/w/1) (USE HTTP ONLY!)
 
+## Preview
+[<img src="https://i.imgur.com/LNfkUP5.jpg" width="45%"/>](https://i.imgur.com/LNfkUP5.jpg) | [<img src="https://i.imgur.com/rcUDfW6.jpg" width="45%"/>](https://i.imgur.com/rcUDfW6.jpg)
+[<img src="https://i.imgur.com/XqFJbBc.jpg" width="45%"/>](https://i.imgur.com/XqFJbBc.jpg) | [<img src="https://i.imgur.com/Ut10l3H.jpg" width="45%"/>](https://i.imgur.com/Ut10l3H.jpg)
+
+**Video** - https://www.youtube.com/watch?v=9gkEwY_h9lA
+
+**Gif** -  https://i.imgur.com/f9TEyd7.gif
+
+
 ## Table of Contents
 - [Preview](#preview)
-  - [Video](#video)
-  - [Images](#images)
 - [Features](#features)
 - [Project folder description](#project-folder-description)
 - [Usage](#usage)
@@ -26,17 +33,6 @@ Wallpaper Engine but online-version. View animated wallpapers directly in your b
 - [Inspired by](#inspired-by)
 - [License](#license)
 - [Author](#author)
-
-## Preview
-
-### Video
-Video - https://www.youtube.com/watch?v=9gkEwY_h9lA
-
-Gif -  https://i.imgur.com/f9TEyd7.gif
-
-### Images
-[<img src="https://i.imgur.com/LNfkUP5.jpg" width="45%"/>](https://i.imgur.com/LNfkUP5.jpg) | [<img src="https://i.imgur.com/rcUDfW6.jpg" width="45%"/>](https://i.imgur.com/rcUDfW6.jpg)
-[<img src="https://i.imgur.com/XqFJbBc.jpg" width="45%"/>](https://i.imgur.com/XqFJbBc.jpg) | [<img src="https://i.imgur.com/Ut10l3H.jpg" width="45%"/>](https://i.imgur.com/Ut10l3H.jpg)
 
 ## Features
 
