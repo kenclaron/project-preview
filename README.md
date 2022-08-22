@@ -1,7 +1,7 @@
 # Project Preview - Web Wallpaper Engine
-![github](https://img.shields.io/github/license/kenclaron/project-preview?style=for-the-badge)
-![website-http](https://img.shields.io/website?down_message=offline&label=HTTP%20website&style=for-the-badge&up_message=online&url=http%3A%2F%2Fprojectpreview.ultimatefreehost.in)
-![website-https](https://img.shields.io/website?down_message=offline&label=HTTPS%20website&style=for-the-badge&up_message=online&url=https%3A%2F%2Fprojectpreview.ultimatefreehost.in)
+[![github](https://img.shields.io/github/license/kenclaron/project-preview?style=for-the-badge)](/LICENSE)
+[![HTTP website](https://img.shields.io/website?down_message=offline&label=HTTP%20website%20(click)&style=for-the-badge&up_message=online&url=http%3A%2F%2Fprojectpreview.ultimatefreehost.in)](http://projectpreview.ultimatefreehost.in/w/1)
+[![HTTPS website](https://img.shields.io/website?down_message=offline&label=HTTPS%20website%20(click)&style=for-the-badge&up_message=online&url=https%3A%2F%2Fprojectpreview.ultimatefreehost.in)](https://projectpreview.ultimatefreehost.in/w/1)
 
 ## About
 Wallpaper Engine but online-version. View animated wallpapers directly in your browser. 
@@ -10,7 +10,7 @@ Wallpaper Engine but online-version. View animated wallpapers directly in your b
 
 **Solution with**: HTML5, CSS3, JavaScript (ES6), PHP7+
 
-**Check this project here**: [projectpreview.ufh.in](http://projectpreview.ultimatefreehost.in/w/1)
+**Check this project here**: [projectpreview.ufh.in](http://projectpreview.ultimatefreehost.in/w/1) (USE HTTP ONLY!)
 
 ## Table of Contents
 - [Preview](#preview)
@@ -40,16 +40,17 @@ Gif -  https://i.imgur.com/f9TEyd7.gif
 
 ## Features
 
-- Supports HTML, JS, CSS code in projects;
+- Supports **HTML, JS, CSS** code in projects;
 - Full customizing of projects;
 - Supports all custom dynamic settings of projects;
 - Taking a screenshot of animation;
+- Supports **OpenGraph** on third-party services
 - Supports all original events and input types from Wallpaper Engine;
 - Supports downloading of source in `.zip`;
 - Real-time editor of your Javascript Canvas-animation;
 - Debug menu;
-- Cross-browser support;
-- Desktop and Mobile (Android and IOS) platforms support.
+- **Cross-browser** support;
+- **Desktop and Mobile (Android and IOS) platforms** support.
 
 ## Project folder description
 
@@ -86,7 +87,7 @@ project-preview/
 * **Safari** (9.0 or latest)
 
 ### Software
-* Any software using Blink 49 or latest
+* Any software using Blink 49 or latest (ex. Chromium, electron.js)
 * Any software using V8 4.9.385 or latest
 
 ## Dependencies 
