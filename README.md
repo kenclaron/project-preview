@@ -13,8 +13,8 @@ Wallpaper Engine but online-version. View animated wallpapers directly in your b
 **Check this project here**: [http://projectpreview.ultimatefreehost.in](http://projectpreview.ultimatefreehost.in/w/1) (USE HTTP ONLY!)
 
 ## Preview
-[<img src="https://i.imgur.com/LNfkUP5.jpg" width="47.5%"/>](https://i.imgur.com/LNfkUP5.jpg) [<img src="https://i.imgur.com/rcUDfW6.jpg" width="47.5%"/>](https://i.imgur.com/rcUDfW6.jpg)
-[<img src="https://i.imgur.com/XqFJbBc.jpg" width="47.5%"/>](https://i.imgur.com/XqFJbBc.jpg) [<img src="https://i.imgur.com/Ut10l3H.jpg" width="47.5%"/>](https://i.imgur.com/Ut10l3H.jpg)
+[<img src="https://i.imgur.com/oyGIZEE.png" width="47.5%"/>](https://i.imgur.com/oyGIZEE.png) [<img src="https://i.imgur.com/LNfkUP5.jpg" width="47.5%"/>](https://i.imgur.com/LNfkUP5.jpg) 
+[<img src="https://i.imgur.com/rcUDfW6.jpg" width="30%"/>](https://i.imgur.com/rcUDfW6.jpg) [<img src="https://i.imgur.com/XqFJbBc.jpg" width="30%"/>](https://i.imgur.com/XqFJbBc.jpg) [<img src="https://i.imgur.com/Ut10l3H.jpg" width="30%"/>](https://i.imgur.com/Ut10l3H.jpg)
 
 **Video** - https://www.youtube.com/watch?v=9gkEwY_h9lA
 
